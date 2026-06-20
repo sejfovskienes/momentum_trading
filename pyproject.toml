@@ -1,7 +1,17 @@
 [project]
 name = "momentum-trading"
+packages = [
+    { include = "app" }
+]
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "apscheduler>=3.11.2",
+    "plotly>=6.8.0",
+    "pytz>=2026.2",
+    "streamlit>=1.58.0",
+    "tinydb>=4.8.2",
+    "yfinance>=1.4.1",
+]
